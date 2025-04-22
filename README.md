@@ -77,3 +77,30 @@ El programa permite realizar diferentes operaciones sobre esta lista mediante un
 - `flota.py`: clase `Flota`, que gestiona la lista de naves y contiene todos los métodos de ordenamiento, búsqueda y filtrado.
 - `datos_prueba.py`: lista de naves de ejemplo para pruebas.
 - `README.md`: documentación del proyecto.
+
+
+
+
+# Ejercicio 4: La Matemática de los Encantamientos
+
+Este proyecto implementa un sistema de manipulación de polinomios utilizando programación orientada a objetos en Python. El objetivo es simular la interacción con un grimorio mágico que contiene estructuras de datos que representan polinomios.
+
+## Descripción del ejercicio
+
+Se debe implementar una aplicación que permita realizar las siguientes operaciones sobre polinomios:
+
+1. Restar dos polinomios.
+2. Dividir dos polinomios.
+3. Eliminar un término de un polinomio.
+4. Verificar si un término específico (por exponente) existe en un polinomio.
+
+Estas funcionalidades se acceden mediante un menú interactivo en consola.
+
+## Estructura del proyecto
+
+- `main.py`: punto de entrada del programa.
+- `menu.py`: contiene el menú interactivo con navegación por flechas.
+- `polinomio.py`: definición de las clases `Polinomio` y `Termino`.
+- `operaciones.py`: funciones para realizar la resta y la división de polinomios.
+- `utils.py`: funciones auxiliares para la entrada de datos y visualización de resultados.
+- `README.md`: documentación del proyecto.
