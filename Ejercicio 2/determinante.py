@@ -13,10 +13,10 @@ def determinante_recursivo(m):
         return m[0][0]*m[1][1] - m[0][1]*m[1][0]
 
     det = 0
-    for col in range(len(m)):
+    for col in range(3):
         submatriz = [
-            [m[i][j] for j in range(len(m)) if j != col]
-            for i in range(1, len(m))
+            [m[i][j] for j in range(3) if j != col]
+            for i in range(1, 3)
         ]
         signo = (-1) ** col
         det += signo * m[0][col] * determinante_recursivo(submatriz)

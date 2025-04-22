@@ -1,29 +1,35 @@
 import questionary
 from matriz import Matriz
-from utils import pedir_matriz
 from determinante import determinante_recursivo, determinante_sarrus
+from utils import pedir_matriz, mostrar_resultado
 
 def iniciar_menu():
-    print("\n📘 Bienvenido al Secreto de la Cifra Mágica")
+    print("\n🔐 Bienvenido al Secreto de la Cifra Mágica 🔐")
 
-    matriz_3x3 = pedir_matriz()
+    matriz = pedir_matriz()
 
-    opcion = questionary.select(
-        "¿Qué método deseas usar para calcular el determinante?",
-        choices=[
-            "📐 Método recursivo (cofactores)",
-            "📏 Método iterativo (regla de Sarrus)",
-            "❌ Salir"
-        ]
-    ).ask()
+    while True:
+        opcion = questionary.select(
+            "¿Qué método deseas usar para calcular el determinante?",
+            choices=[
+                "📐 Método recursivo (expansión por cofactores)",
+                "📏 Método iterativo (regla de Sarrus)",
+                "🔁 Introducir nueva matriz",
+                "❌ Salir"
+            ]
+        ).ask()
 
-    if opcion.startswith("📐"):
-        resultado = determinante_recursivo(matriz_3x3.datos)
-        print(f"\n🔢 Determinante (recursivo): {resultado}")
+        if opcion.startswith("📐"):
+            resultado = determinante_recursivo(matriz.datos)
+            mostrar_resultado(resultado, "recursivo")
 
-    elif opcion.startswith("📏"):
-        resultado = determinante_sarrus(matriz_3x3.datos)
-        print(f"\n🔢 Determinante (iterativo): {resultado}")
+        elif opcion.startswith("📏"):
+            resultado = determinante_sarrus(matriz.datos)
+            mostrar_resultado(resultado, "iterativo")
 
-    elif opcion.startswith("❌"):
-        print("👋 ¡Hasta la próxima, matemático aventurero!")
+        elif opcion.startswith("🔁"):
+            matriz = pedir_matriz()
+
+        elif opcion.startswith("❌"):
+            print("👋 Gracias por participar en esta búsqueda mágica.")
+            break
