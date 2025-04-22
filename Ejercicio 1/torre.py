@@ -14,4 +14,5 @@ class Torre:
         return self.pila_piedras.pop()
 
     def __str__(self):
-        return f"{self.nombre} (tamaño actual: {len(self.pila_piedras)})"
+        return f"{self.nombre}: {self.pila_piedras}"
+

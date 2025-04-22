@@ -1,0 +1,11 @@
+🔺 REGISTRO DE MOVIMIENTOS DEL PUZZLE 🔺
+
+🪨 Mover piedra 1 de Torre Origen a Torre Destino
+🪨 Mover piedra 2 de Torre Origen a Torre Auxiliar
+🪨 Mover piedra 1 de Torre Destino a Torre Auxiliar
+🪨 Mover piedra 3 de Torre Origen a Torre Destino
+🪨 Mover piedra 1 de Torre Auxiliar a Torre Origen
+🪨 Mover piedra 2 de Torre Auxiliar a Torre Destino
+🪨 Mover piedra 1 de Torre Origen a Torre Destino
+
+✅ Puzzle completado con éxito.
