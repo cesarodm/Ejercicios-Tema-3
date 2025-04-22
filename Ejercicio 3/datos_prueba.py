@@ -2,12 +2,12 @@ from nave import Nave
 
 def cargar_naves():
     return [
-        Nave("Cometa Veloz", 45.6, 3, 12),
-        Nave("Titán del Cosmos", 120.3, 8, 50),
-        Nave("GX-7 Explorador", 33.2, 2, 4),
-        Nave("Furia Solar", 60.0, 5, 20),
-        Nave("GX-1 Cazador", 40.0, 4, 6),
-        Nave("Nebulosa Fantasma", 80.1, 6, 25),
-        Nave("Eco de Saturno", 20.0, 2, 1),
-        Nave("Marea Galáctica", 150.0, 10, 60),
+        Nave("Cometa Veloz", 45.6, 3, 12),  
+        Nave("Titán del Cosmos", 120.3, 8, 50), 
+        Nave("Destructor Imperial", 1600.0, 37000, 97000),  
+        Nave("Halcón milenario", 60.0, 4, 12),
+        Nave("Estrella de la muerte", 160000.0, 342953, 1000000),
+        Nave("GXarthor", 25.0, 1, 0),  
+        Nave("Caza estelar Ala-x", 13.1, 1, 0),
+        Nave("Tantive IV", 150.0, 165, 600) 
     ]
