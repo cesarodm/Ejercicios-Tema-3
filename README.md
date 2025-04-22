@@ -26,13 +26,6 @@ piramide/ ├── main.py # Punto de entrada del programa ├── menu.py # 
 
 
 
-
-
-
-
-
-
-
 # El Secreto de la Cifra Mágica
 
 Este proyecto resuelve el determinante de una matriz cuadrada de 3x3 utilizando dos métodos distintos:
@@ -56,3 +49,31 @@ En las páginas de un antiguo libro de matemáticas aparece una matriz cuadrada 
 - `matriz.py`: clase `Matriz` para representar y validar una matriz 3x3.
 - `determinante.py`: funciones que implementan ambos métodos de cálculo del determinante.
 - `utils.py`: funciones auxiliares para entrada y salida de datos.
+
+
+# Ejercicio 3: El Gran Rally Espacial
+
+Este proyecto consiste en la gestión y análisis de una lista de naves espaciales pertenecientes a una carrera intergaláctica. Cada nave posee información como nombre, longitud, cantidad de tripulantes y pasajeros.
+
+El programa permite realizar diferentes operaciones sobre esta lista mediante un menú interactivo en consola.
+
+## Funcionalidades implementadas
+
+1. Ordenar las naves por nombre (ascendente).
+2. Ordenar las naves por longitud (descendente).
+3. Mostrar la información de las naves "Cometa Veloz" y "Titán del Cosmos".
+4. Determinar las cinco naves con mayor cantidad de pasajeros.
+5. Indicar la nave que requiere la mayor cantidad de tripulación.
+6. Mostrar todas las naves cuyo nombre comience con "GX".
+7. Listar todas las naves que pueden llevar seis o más pasajeros.
+8. Mostrar la nave más pequeña y la más grande.
+9. Salir del programa.
+
+## Estructura del proyecto
+
+- `main.py`: punto de entrada del programa.
+- `menu.py`: contiene el menú interactivo y la lógica de navegación.
+- `nave.py`: clase `Nave`, que representa a cada nave espacial.
+- `flota.py`: clase `Flota`, que gestiona la lista de naves y contiene todos los métodos de ordenamiento, búsqueda y filtrado.
+- `datos_prueba.py`: lista de naves de ejemplo para pruebas.
+- `README.md`: documentación del proyecto.
